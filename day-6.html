@@ -1,0 +1,123 @@
+<html>
+  <head>
+      <title>CSS</title>
+<link rel="stylesheet" href="container.css">
+   </head>
+<body>
+
+<h1>CASCADING STYLE SHEET</h1>
+    <div id="container">
+        <p class="para">This paragraph is about css and styling</p>
+        <p>This is paragraph 2</p>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    </div>
+    <div>
+    <input type="text"
+           id="text">
+<input type="submit"
+    id="text">
+    </div>
+    
+    <h1>TABLE</h1>
+<table table id="customers">
+    <tr>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>COUNTRY</th>
+    </tr>
+    <tr>
+        <td>LOKESHWARI</td>
+        <td>23</td>
+        <td>INDIA</td>
+    </tr>
+    <tr>
+        <td>PRIYA</td>
+        <td>26</td>
+        <td>INDIA</td>
+    </tr>
+    <tr>
+        <td>ABARNA</td>
+        <td>22</td>
+        <td>AMERICA</td>
+    </tr>
+</table>
+<br/><br/>
+<div class="box">
+<form>
+    <h1>FORM</h1>
+    <div class="form">
+    <label for="name">Name:</label>
+        <input type="text"
+           id="Name"
+           name="name"
+           reqiured pattern="[A-Za-z]{12}+"title="Give proper name (only alphabet)">
+    <br/><br/>
+
+    <label for="email">Email:</label>
+        <input type="email"
+            id="email"
+            name="email"
+            reqiured>
+    <br/><br/>
+    
+    <label for="age">Age:</label>
+        <input type="number"
+           id="age"
+           name="age"
+           min="23"
+           max="45">
+    <br/><br/>
+
+    <label for="food">Food:</label>
+        <input type="radio"
+           id="food"
+           name="food"
+           value="veg">
+    <label for="food">veg</label>
+    
+
+    <input type="radio"
+           id="food"
+           name="food"
+           value="non-veg">
+    <label for="food">non-veg</label>
+    <br/><br/>
+
+    <label for="department">Department</label>
+    <select>
+        <option value=""></option>
+        <option value="m.sc"></option>
+        <option value="B.sc"></option>
+        <option value="B.E"></option>
+        <option value="M.E"></option>
+        <option></option>
+    </select>
+    <br/><br/>
+
+    <label for="description">Description:</label>
+             <textarea type="text"
+                     id="description"
+                     name="description"
+                     required maxlength=100></textarea>
+            <br/><br/>
+    
+
+    <div id="button">
+        <input type="submit"
+        id="button"
+        name="submit">
+    <input type="reset"
+           id="button"
+           name="reset">
+    </div>
+    
+    
+</div>
+</form>
+</div>
+</body>
+</html>
