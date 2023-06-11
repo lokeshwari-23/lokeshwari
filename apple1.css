@@ -1,0 +1,176 @@
+.unli {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  gap: 30px;
+  list-style-type: none;
+  padding: 30px 60px;
+  background-color: #0f3c4c;
+  color: white;
+  justify-content: space-evenly;
+  margin-top: -90px;
+  width: 90%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.container_image {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image1a_content {
+  font-size: 1.5rem;
+  color: white;
+}
+.learn_more {
+  font-size: 1.4rem;
+}
+
+.first_image1 {
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+}
+
+.container_image {
+  margin-top: 60px;
+  color: black;
+}
+
+.image_2 {
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+}
+
+.image2_content_1,
+.image2_content_2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.images3 {
+  justify-content: center;
+  text-align: center;
+}
+
+.image3_content_1,
+.image3_content_2,
+.learn_more1,
+.buy {
+  justify-content: center;
+  text-align: center;
+}
+
+.macbookpro {
+  background-color: black;
+}
+
+.macbookpro_content_1,
+.macbookpro_content_2 {
+  color: white;
+}
+.macbookpro_content_2 {
+}
+
+.ipadpro {
+  background-color: black;
+}
+
+.ipadpro_content_1,
+.ipadpro_content_2 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.homepod {
+  background-color: black;
+}
+
+.homepod_content_1,
+.homepod_content_2 {
+  font-size: 1.2rem;
+  color: white;
+}
+.copyright1 {
+  background-color: wheat;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  opacity: 50%;
+  line-height: 30px;
+}
+
+.copyright,
+.co {
+  opacity: 50%;
+}
+.container_ipad {
+  background-color: black;
+}
+
+.container_image4 {
+  background-color: black;
+}
+
+.image4_content_1,
+.image4_content_3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.image4_content_2 {
+  color: red;
+  font-size: 1.2rem;
+}
+.image3_content_1,
+.image3_content_2 {
+  font-size: 1.5rem;
+}
+.container_ipad {
+  background-color: white;
+}
+.ipad_content_1,
+.ipad_content_2 {
+  font-size: 1.5rem;
+}
+.learn_more1,
+.buy,
+.learn_more2,
+.buy2,
+.learn_more3,
+.buy3,
+.learn_more4,
+.buy4,
+.learn_more5,
+.buy5 {
+  font-size: 1.3rem;
+}
+
+.ipadpro_content_1,
+.ipadpro_content_2 {
+  font-size: 1.5rem;
+}
+
+.macbookpro_content_1,
+.macbookpro_content_2 {
+  font-size: 1.5rem;
+}
+
+.applewatch_content_1,
+.applewatch_content_2 {
+  font-size: 1.5rem;
+}
+
+.homepod_content_1,
+.homepod_content_2 {
+  font-size: 1.5rem;
+}
