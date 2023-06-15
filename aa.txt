@@ -1,0 +1,65 @@
+//1.Two sum nums
+/** 
+*@param{number[]}nums
+*@param{number}target
+*return{number[]}
+*/
+
+var twoSum=function(nums,target){
+var map={};
+for(var i=0;i<nums.lenght;i++){
+var n=nums[i];
+
+if(map[target-n]>=0){
+
+return[map[target-n],i]
+}
+
+else{
+map[n]=i;
+}
+}
+};
+
+//2.find 1st and last position
+/** 
+*@param{number[]}nums
+*@param{number}target
+*@return{number[]}
+*/
+
+var searchRange=function(nums,target){
+var start=-1;
+var end=-1;
+for(i=0;i<nums.length;i++){
+if(nums[i]==target){
+if(start!=-1){
+end=i;
+}
+else{
+start=i;
+end=start;
+}
+}
+}
+return[start,end];
+};
+
+
+//3.missing positive nmber
+/** 
+*@param{number[]}nums
+*@return{number[]}
+*/
+
+
+var firstMissingPositive=function(nums){
+let start=[];
+let end=nums[0];
+for(let i=0;i<nums.length;i++){
+if(nums[i]>end){
+end=nums[i];
+}
+return 1;
+}
+};

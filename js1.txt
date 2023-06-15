@@ -1,0 +1,118 @@
+var studentDatabase=[];
+function addStudent(name,email,phone,regId){
+    var student={
+        name,
+        email,
+        phone,
+        regId
+    };
+studentDatabase.push(student);
+}
+
+addStudent("John Doe","jhon@gmail.com",1234567891,"REG01");
+
+addStudent("priya","priya@gmail.com",2134567891,"REG02");
+
+addStudent("aparna","aparna@gmail.com",7871256891,"REG03");
+
+addStudent("John Doe","jhon@gmail.com",1234567891,"REG04");
+
+addStudent("lokeshwari","lokeshwari@gmail.com",7871255023,"REG05");
+
+addStudent("karthi","karthi@gmail.com",1234567891,"REG06");
+
+addStudent("sridher","sridher@gmail.com",8625689245,"REG07");
+
+addStudent("prabha","prabha@gmail.com",7563258671,"REG08");
+
+addStudent("bharathi","bharathi@gmail.com",9645336861,"REG09");
+
+addStudent("renu","renu@gmail.com",8776933891,"REG10");
+
+console.log(student)
+
+----------------------------------------------------------------------------------------
+
+var start=studentDatabase.filter(function(studentDatabase){
+ return studentDatabase.name.startsWith("m");
+});
+
+console.log(start);
+
+
+----------------------------------------------------------------
+
+//var upperCase=studentDatabase.map(function(student){
+    return student.name.toUpperCase();
+});
+
+console.log(upperCase)
+
+-----------------------------------------------------------------------
+
+//update,del
+studentDatabase.splice(1,1,"name:lok",
+"email:lok@123",
+"phone:2667867989",
+"regId:REG02");
+console.log(studentDatabase);
+//
+-----------------------------------------------------------------------------
+//email ----true
+
+var mail=studentDatabase.every(function(student)
+{
+    return student.email!==undefined;
+});
+
+console.log(mail);
+
+---------------------------------------------------------------------------
+studentDatabse.map(function(studentDatabase){
+ if(studentDetails.name=="aparna")
+    studentDatabase.age="24";
+});
+
+------------------------------------------------------------------------------
+//find email --check and bring exact email from database --------true
+
+var studentEmail=studentDatabase.find(function(student){
+
+  return student.email==="aparna@gmail.com";
+});
+
+console.log(studentEmail);
+
+
+
+-----------------------------------------------------------------------------------------------
+age-23 and 25
+
+
+var a=studentDatabse.filter(function(studetDatabase){
+  return studentDatabse.age ==23 && studentDatabae.age==25;
+});
+
+console.log(a);
+
+---------------------------------------------------------------------------------------------------
+
+update---------------
+
+const color = ["red","green","yellow","blue"];
+
+color[2] = "blue";
+
+console.log(color);
+
+-------------------------------------------------------------------------------------------
+delete------
+const color = ["red", "green", "violet", "pink"];
+
+delete color[0];
+
+console.log(color);
+
+
+-------------------------------------------------------------------------------------------
+
