@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #display{
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+    #popupbg{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 122, 196, 0.483);
+    z-index: 999;
+}
+#popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(212, 213, 207);
+    font-size: 12px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+#popupcontainer{
+  display:flex;
+  justify-content: space-between; 
+}
+#content{
+  overflow-y: scroll;
+  margin:0px 50px;
+  height: 150px;
+
+}
+
+#img{
+  width:200px;
+  height: 200px;
+
+
+}
+
+/* @media only screen and (max-width: 320px) {
+  body{
+    background-color: aqua;
+  }
+  #display{
+        display: flex;
+        flex-direction: column;
+      }
+      #img{
+  width:100px;
+  height: 100px;
+
+      } */
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-color:red;
+  }
+  #display{
+        display: flex;
+        flex-direction: column;
+      }
+      #img{
+  width:100px;
+  height: 100px;
+
+      }}
+
+    </style>
+    
+</head>
+<body>
+    <h2>COUNTRY FLAGS</h2>
+<section>
+  <form id="myform">
+    <input type="submit" value="Display Countries Flags" id="addFlag">
+  </form>
+</section> 
+
+<br/>
+
+<div id="display"></div>
+<div id="popupbg"></div>
+<div id="popup">
+    <span id="closeIcon">&times;</span>
+       <div id="popupContainer">
+       <img id="img"></img>
+       <p id="description"></p>
+       </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
